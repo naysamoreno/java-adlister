@@ -18,8 +18,13 @@ public class HitCounter extends HttpServlet {
         hitCount++;
 
         PrintWriter out = res.getWriter();
+
         String totalHits = "Total number of Hits:";
         out.println("<h1>" + totalHits +  hitCount + "</h1>");
+
+
+
+
     }
 
 }
