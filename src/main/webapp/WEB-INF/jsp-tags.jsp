@@ -17,15 +17,15 @@
 <html>
 <head>
     <title>JSP Tags</title>
-<%@include file="partials/head.jsp"%>
+<%@include file="../WEB-INF/partials/head.jsp"%>
 </head>
 <body>
-<%@include file="partials/navbar.jsp"%>
+<%@include file="../WEB-INF/partials/navbar.jsp"%>
 <h1> Hello there!!</h1>
 
 <h2>This local count is: <%=localCount%></h2>
 <h2>This instance count is: <%=instanceCount%></h2>
 
-<%@include file="partials/national-parks.jsp"%>
+<%@include file="../WEB-INF/partials/national-parks.jsp"%>
 </body>
 </html>
