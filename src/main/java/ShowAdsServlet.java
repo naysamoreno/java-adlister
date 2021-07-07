@@ -10,7 +10,7 @@ import java.util.List;
 public class ShowAdsServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        Ads AdsDAO = new ListAdsDao();
+        Ads AdsDAO = DaoFactory.getAdsDao();
         List<Ad> AdsList = AdsDAO.all();
         req.setAttribute("ads", AdsList);
         req.getRequestDispatcher("/ads/index.jsp").forward(req,resp);
