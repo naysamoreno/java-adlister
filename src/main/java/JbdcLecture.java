@@ -8,9 +8,12 @@ public class JbdcLecture {
         DriverManager.registerDriver(new Driver());
 
             // connect to the database by providing the URL, user and the password of the user we want to connect as
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/codeup_test_db?serverTimezone=UTC&useSSL=false",
-                    "naysamoreno",
-                    "snowysnowsterislife");
+        Config config = new Config();
+        Connection connection = DriverManager.getConnection(
+                config.getUrl(),
+                config.getUser(),
+                config.getPassword()
+        );
             // We can use the Statment object to make our queries
             Statement stmt = connection.createStatement();
 
