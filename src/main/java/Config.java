@@ -3,9 +3,9 @@ class Config {
         return "jdbc:mysql://localhost/codeup_test_db?serverTimezone=UTC&useSSL=false";
     }
     public String getUser() {
-        return "naysamoreno";
+        return "root";
     }
     public String getPassword() {
-        return "snowysnowsterislife";
+        return "codeup";
     }
 }
